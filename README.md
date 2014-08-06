@@ -1,0 +1,1 @@
+This is a Class for returning Certificates that do not validate and a method for getting the fingerprint, it is meant as an alternative to spawning an openssl process. This should not be used in any class used for communicating over ssl as it will momentarily setDefaultSSLSocketFactory for HttpsURLConnection to use a non-validating trust manager.
